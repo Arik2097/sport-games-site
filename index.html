@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>חיפוש משחקי ספורט</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="sport-selection">
+      <h2 id="h2Top">בחר ספורט</h2>
+      <div id="balls">
+        <img src="img/football.png" id="football" alt="כדורגל" />
+        <img src="img/basketball (2).png" id="basketball" alt="כדורסל" />
+      </div>
+    </section>
+
+    <section id="search" style="display: none">
+      <label for="location">מיקום:</label>
+      <input type="text" id="location" placeholder="הכנס עיר או אזור" />
+
+      <label for="age">גיל השחקנים:</label>
+      <input type="number" id="age" placeholder="הכנס גיל ממוצע" min="0" />
+
+      <button onclick="searchGames()">חפש</button>
+    </section>
+
+    <header>
+      <h1>מצא משחקי כדורגל וכדורסל באזור שלך</h1>
+    </header>
+
+    <section id="results">
+      <h2>תוצאות חיפוש:</h2>
+      <ul id="games-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
