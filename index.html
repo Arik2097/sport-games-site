@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="sport-selection">
+    <!-- <section id="sport-selection">
       <h2 id="h2Top">בחר ספורט</h2>
       <div id="balls">
         <img src="img/football.png" id="football" alt="כדורגל" />
         <img src="img/basketball (2).png" id="basketball" alt="כדורסל" />
       </div>
-    </section>
+    </section> -->
 
-    <section id="search" style="display: none">
+    <section id="search">
       <label for="location">מיקום:</label>
       <input type="text" id="location" placeholder="הכנס עיר או אזור" />
 
       <label for="age">גיל השחקנים:</label>
       <input type="number" id="age" placeholder="הכנס גיל ממוצע" min="0" />
 
-      <button onclick="searchGames()">חפש</button>
+      <button onclick="searchFields()">חפש</button>
     </section>
 
     <header>
@@ -32,6 +32,11 @@
     <section id="results">
       <h2>תוצאות חיפוש:</h2>
       <ul id="games-list"></ul>
+    </section>
+    <section id="fields-section" style="display: none">
+      <h2>מגרשים בעיר שבחרת:</h2>
+      <ul id="fields-list"></ul>
+      <button onclick="goBack()">חזור לחיפוש</button>
     </section>
 
     <script src="script.js"></script>
